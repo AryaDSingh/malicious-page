@@ -2,9 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Malicious Page</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+    <title>Malicious Page - Version 2</title>
   </head>
   <body>
+    <!-- Static text to show the version -->
+    <h1>Malicious Page - Version 2</h1>
+    <!-- A placeholder where the flag should appear -->
+    <div id="flagOutput">Loading flag...</div>
+    <!-- External script to execute your logic -->
     <script src="script.js"></script>
   </body>
 </html>
