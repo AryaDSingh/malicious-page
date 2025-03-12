@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+    <!-- Optionally include a relaxed CSP meta tag if needed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
     <title>Malicious Page - Version 2</title>
   </head>
   <body>
@@ -10,7 +11,7 @@
     <h1>Malicious Page - Version 2</h1>
     <!-- A placeholder where the flag should appear -->
     <div id="flagOutput">Loading flag...</div>
-    <!-- External script to execute your logic -->
+    <!-- Reference the external script -->
     <script src="script.js"></script>
   </body>
 </html>
